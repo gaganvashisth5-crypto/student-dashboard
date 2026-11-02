@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Student Dashboard 🎓</h1>
+            <button id="themeBtn">🌙 Theme</button>
+        </header>
+
+        <section class="welcome">
+            <h2 id="greeting">Hi, User! 👋</h2>
+            <p>Welcome to your Student Dashboard.</p>
+            <h2 id="clock">00:00:00</h2>
+            <p id="date"></p>
+        </section>
+
+        <section class="quote">
+            <h3>Daily Motivation</h3>
+            <p id="quote">Work hard in silence.</p>
+            <button onclick="newQuote()">New Quote</button>
+        </section>
+
+        <section class="todo">
+            <h2>My Study Tasks 📝</h2>
+
+            <div class="task-input">
+                <input type="text" id="taskInput" placeholder="Enter your task...">
+                <button onclick="addTask()">Add</button>
+            </div>
+
+            <ul id="taskList"></ul>
+        </section>
+
+        <footer>
+            <p>Made with ❤️ by a B.Tech Student</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
